@@ -31,15 +31,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-if-BTR">
+                                <state key="normal" title="Reverse"/>
+                                <connections>
+                                    <action selector="reverse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pw-YG-2YX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-3f-6m7">
+                                <state key="normal" title="Needle"/>
+                                <connections>
+                                    <action selector="needle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pL-K4-oOu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j57-Ne-FtW">
+                                <state key="normal" title="Prefix"/>
+                                <connections>
+                                    <action selector="prefix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roc-eq-ViQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K1-Js-w83">
+                                <state key="normal" title="Date"/>
+                                <connections>
+                                    <action selector="date:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kV5-1n-s1i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="j57-Ne-FtW" firstAttribute="leading" secondItem="3Lm-3f-6m7" secondAttribute="trailing" constant="8" id="0bs-70-Dgd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="XVh-UE-4VP" secondAttribute="leading" id="0r7-n4-k0c"/>
+                            <constraint firstItem="j57-Ne-FtW" firstAttribute="baseline" secondItem="3Lm-3f-6m7" secondAttribute="baseline" id="6Dt-JB-jQm"/>
+                            <constraint firstItem="3Lm-3f-6m7" firstAttribute="baseline" secondItem="f1x-if-BTR" secondAttribute="baseline" id="7PS-UV-m6b"/>
                             <constraint firstItem="Zqo-eq-IFA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BYQ-dY-tQa"/>
+                            <constraint firstItem="f1x-if-BTR" firstAttribute="leading" secondItem="XVh-UE-4VP" secondAttribute="trailing" constant="8" id="Rwy-06-DfD"/>
+                            <constraint firstItem="4K1-Js-w83" firstAttribute="leading" secondItem="j57-Ne-FtW" secondAttribute="trailing" constant="8" id="StS-PV-4nt"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Zqo-eq-IFA" secondAttribute="leading" id="X1a-DN-FQm"/>
+                            <constraint firstItem="4K1-Js-w83" firstAttribute="baseline" secondItem="j57-Ne-FtW" secondAttribute="baseline" id="jCj-NE-UJf"/>
+                            <constraint firstItem="3Lm-3f-6m7" firstAttribute="leading" secondItem="f1x-if-BTR" secondAttribute="trailing" constant="8" id="qGY-jf-3aM"/>
                             <constraint firstItem="XVh-UE-4VP" firstAttribute="top" secondItem="Zqo-eq-IFA" secondAttribute="bottom" constant="8" id="s92-mJ-qst"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XVh-UE-4VP" secondAttribute="bottom" constant="20" id="uQ1-Pn-6DD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zqo-eq-IFA" secondAttribute="trailing" id="ujR-0a-K2c"/>
+                            <constraint firstItem="f1x-if-BTR" firstAttribute="baseline" secondItem="XVh-UE-4VP" secondAttribute="baseline" id="umv-Xw-ZrN"/>
                         </constraints>
                     </view>
                     <connections>
